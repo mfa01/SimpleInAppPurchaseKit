@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FaildMessageCantMakePurchaseTitle</key>
+	<string>Sorry</string>
+	<key>FaildMessageCantMakePurchaseText</key>
+	<string>You can&apos;t make this purchase now</string>
+	<key>FaildMessageCantMakePurchaseOkBtn</key>
+	<string>OK</string>
+	<key>FaildMessageNoAvailableProductTitle</key>
+	<string>Ooops</string>
+	<key>FaildMessageNoAvailableProductText</key>
+	<string>Not product available now, Please try again later</string>
+	<key>FaildMessageNoAvailableProductOkBtn</key>
+	<string>OK</string>
+	<key>FaildMessageCantRestoreTitle</key>
+	<string>Sorry</string>
+	<key>FaildMessageCantRestoreText</key>
+	<string>You can&apos;t restore purchased products now</string>
+	<key>FaildMessageCantRestoreOkBtn</key>
+	<string>OK</string>
+	<key>FaildMessageTransactionTitle</key>
+	<string>Ooops</string>
+	<key>FaildMessageTransactionText</key>
+	<string>Please try again later</string>
+	<key>FaildMessageTransactionOkBtn</key>
+	<string>OK</string>
+</dict>
+</plist>
