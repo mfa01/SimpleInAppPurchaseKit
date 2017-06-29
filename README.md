@@ -32,6 +32,7 @@
 <p class="p1">Define the class before using it</p>
 <p class="p2">&nbsp;</p>
 <p class="p1"><em>inapps=[[SimpleInAppPurchaseKit alloc]init];</em></p>
+<p class="p1"><em>inapps.delegate=self;</em></p>
 <p class="p2">&nbsp;</p>
 <p class="p2">&nbsp;</p>
 <p class="p1"><strong>to buy product</strong></p>
