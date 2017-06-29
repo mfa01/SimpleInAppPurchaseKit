@@ -1,29 +1,64 @@
-Create Pods
+SimpleInAppPurchaseKit
+============
 
--check pod specs file
-pod spec lint SimpleInAppPurchaseKit.podspec
-pod lib lint SimpleInAppPurchaseKit.podspec
-
--Open pods session
-pod trunk register mfa01@yahoo.com 'Mohammad Alabed mfa01' --description='Objective C developer'
-
--Push Pod to cocapods
-pod trunk push SimpleInAppPurchaseKit.podspec
+SimpleInAppPurchaseKit to buy and restore apple in app purchases easily,
+so just add this pods to your project and start using it in a seconds,
+you can do buy,get price and restore actions
 
 
-
-GIT
-push changes
-git add .
-git commit -m “Initial Commit2”
-git remote add origin https://github.com/mfa01/SimpleInAppPurchaseKit.git
-git push -u origin master
+Add this line in your pod file
+  pod 'SimpleInAppPurchaseKit'
 
 
-Tagging
-git tag 0.1.1
-git push origin 0.1.0
+In your .h file 
+
+1-add SimpleInAppPurchaseKit header
+#import "SimpleInAppPurchaseKit.h"
+
+2-Also add this to delegates
+ <SimpleInAppPurchaseKitDelegate>
+
+For example 
+@interface testViewController : UIViewController<SimpleInAppPurchaseKitDelegate>
+
+3-Define in the class
+SimpleInAppPurchaseKit* inapps;
 
 
-download git
-git pull https://github.com/mfa01/SimpleInAppPurchaseKit
+
+
+in .m file
+
+Define the class before using it
+
+inapps=[[SimpleInAppPurchaseKit alloc]init];
+
+
+to buy product
+[inapps purchaseProductWithID:@"com.company.app.example1" ShowInView:self];
+
+
+to restore old purchases
+
+[inapps restoreAllProductsAndShowInView:self];
+
+
+to get product price
+[inapps getPriceForProduct:@"com.company.app.exmaple1" ShowInView:self];
+
+
+
+Add Callbacks
+
+-(void)inappControllerSuccesfullyPurchasedProduct:(NSString*)productID{
+}
+-(void)inappControllerSuccesfullyRestoredProduct:(NSMutableArray*)products{
+}
+-(void)inappControllerFaildToPurchase{
+}
+
+
+
+
+for any support please contact me
+mfa01@yahoo.com
