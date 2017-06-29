@@ -3,7 +3,7 @@ SimpleInAppPurchaseKit
 
 SimpleInAppPurchaseKit to buy and restore apple in app purchases easily,
 so just add this pods to your project and start using it in a seconds,
-you can do buy,get price and restore actions
+you can do buy, get price and restore actions
 
 
 Add this line in your pod file
@@ -27,7 +27,7 @@ SimpleInAppPurchaseKit* inapps;
 
 
 
-<h1>in .m file</h1>
+in .m file
 
 Define the class before using it
 
