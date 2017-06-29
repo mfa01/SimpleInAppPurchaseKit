@@ -27,7 +27,7 @@ SimpleInAppPurchaseKit* inapps;
 
 
 
-in .m file
+<h1>in .m file</h1>
 
 Define the class before using it
 
