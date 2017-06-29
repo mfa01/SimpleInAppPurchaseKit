@@ -1,64 +1,64 @@
-SimpleInAppPurchaseKit
-============
-
-SimpleInAppPurchaseKit to buy and restore apple in app purchases easily,
-so just add this pods to your project and start using it in a seconds,
-you can do buy, get price and restore actions
-
-
-Add this line in your pod file
-  pod 'SimpleInAppPurchaseKit'
-
-
-In your .h file 
-
-1-add SimpleInAppPurchaseKit header
-#import "SimpleInAppPurchaseKit.h"
-
-2-Also add this to delegates
- <SimpleInAppPurchaseKitDelegate>
-
-For example 
-@interface testViewController : UIViewController<SimpleInAppPurchaseKitDelegate>
-
-3-Define in the class
-SimpleInAppPurchaseKit* inapps;
-
-
-
-
-in .m file
-
-Define the class before using it
-
-inapps=[[SimpleInAppPurchaseKit alloc]init];
-
-
-to buy product
-[inapps purchaseProductWithID:@"com.company.app.example1" ShowInView:self];
-
-
-to restore old purchases
-
-[inapps restoreAllProductsAndShowInView:self];
-
-
-to get product price
-[inapps getPriceForProduct:@"com.company.app.exmaple1" ShowInView:self];
-
-
-
-Add Callbacks
-
--(void)inappControllerSuccesfullyPurchasedProduct:(NSString*)productID{
-}
--(void)inappControllerSuccesfullyRestoredProduct:(NSMutableArray*)products{
-}
--(void)inappControllerFaildToPurchase{
-}
-
-
-
-
-for any support please contact me
-mfa01@yahoo.com
+<p class="p1"><strong>SimpleInAppPurchaseKit</strong></p>
+<p class="p1">============</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">SimpleInAppPurchaseKit to buy and restore apple in app purchases easily,</p>
+<p class="p1">so just add this pods to your project and start using it in a seconds,</p>
+<p class="p1">you can do buy, get price and restore actions</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Add this line in your pod file</strong></p>
+<p class="p1"><em><span class="Apple-converted-space">&nbsp; </span>pod 'SimpleInAppPurchaseKit'</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>In your .h file </strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1">1-add SimpleInAppPurchaseKit header</p>
+<p class="p1"><em>#import "SimpleInAppPurchaseKit.h"</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p1">2-Also add this to delegates</p>
+<p class="p1"><em> &lt;SimpleInAppPurchaseKitDelegate&gt;</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p1">For example</p>
+<p class="p1"><em>@interface testViewController : UIViewController&lt;SimpleInAppPurchaseKitDelegate&gt;</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p1">3-Define in the class</p>
+<p class="p1"><em>SimpleInAppPurchaseKit* inapps;</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>in .m file</strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1">Define the class before using it</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><em>inapps=[[SimpleInAppPurchaseKit alloc]init];</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>to buy product</strong></p>
+<p class="p1"><em>[inapps purchaseProductWithID:@"com.company.app.example1" ShowInView:self];</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>to restore old purchases</strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><em>[inapps restoreAllProductsAndShowInView:self];</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>to get product price</strong></p>
+<p class="p1"><em>[inapps getPriceForProduct:@"com.company.app.exmaple1" ShowInView:self];</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Add Callbacks</strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><em>-(void)inappControllerSuccesfullyPurchasedProduct:(NSString*)productID{</em></p>
+<p class="p1"><em>}</em></p>
+<p class="p1"><em>-(void)inappControllerSuccesfullyRestoredProduct:(NSMutableArray*)products{</em></p>
+<p class="p1"><em>}</em></p>
+<p class="p1"><em>-(void)inappControllerFaildToPurchase{</em></p>
+<p class="p1"><em>}</em></p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>for any support please contact me</strong></p>
+<p class="p1"><strong>mfa01@yahoo.com</strong></p>
